@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://qmflo6muplv1"]
+
+[ext_resource type="Script" uid="uid://bwjhhy76nj1rm" path="res://pleyer1.gd" id="1_wu5ly"]
+[ext_resource type="Texture2D" uid="uid://cvghoftl0rosi" path="res://sprites/Ninja.png" id="2_yyb6k"]
+[ext_resource type="Texture2D" uid="uid://tr2yis3mdib" path="res://sprites/Sprite folha 1.png" id="3_yk21w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c51x0"]
+size = Vector2(13.500004, 21.999998)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q6r6c"]
+atlas = ExtResource("2_yyb6k")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdubu"]
+atlas = ExtResource("2_yyb6k")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d21ai"]
+atlas = ExtResource("2_yyb6k")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rj586"]
+atlas = ExtResource("2_yyb6k")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0e48y"]
+atlas = ExtResource("3_yk21w")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_epypp"]
+atlas = ExtResource("3_yk21w")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0hol4"]
+atlas = ExtResource("3_yk21w")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c51x0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q6r6c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kdubu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d21ai")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rj586")
+}],
+"loop": 1,
+"name": &"direita",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0e48y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_epypp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0hol4")
+}],
+"loop": 1,
+"name": &"parado",
+"speed": 4.5
+}]
+
+[node name="pleyer" type="CharacterBody2D" unique_id=1020297030]
+script = ExtResource("1_wu5ly")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1455519982]
+position = Vector2(323, 223)
+shape = SubResource("RectangleShape2D_c51x0")
+
+[node name="animaçaopleyer" type="AnimatedSprite2D" parent="." unique_id=2024947675]
+texture_filter = 1
+position = Vector2(322.75, 221.25)
+scale = Vector2(0.6093749, 0.7656248)
+sprite_frames = SubResource("SpriteFrames_c51x0")
+animation = &"parado"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=690260731]
+position = Vector2(323.75, 223)
+position_smoothing_enabled = true
