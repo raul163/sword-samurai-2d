@@ -691,4 +691,5 @@ animation = &"parado"
 
 [node name="Camera2D" type="Camera2D" parent="pleyer" unique_id=1588040267]
 position = Vector2(323.75, 223)
+limit_bottom = 1000000
 position_smoothing_enabled = true

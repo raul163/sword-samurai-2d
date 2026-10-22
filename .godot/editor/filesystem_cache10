@@ -1,10 +1,12 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1792605549
+::res://::1792708819
+caveOrFlorest.tscn::PackedScene::7826973985171195388::1792612299::0::1::::<><><>0<>0<><>::uid://qmflo6muplv1::::res://pleyer.tscn<>uid://cbm1n5vambln4::::res://tile map/Cave Tileset/Brown_Tile_Terrain (16 x 16).png
 icon.svg::CompressedTexture2D::4572380541978889655::1792286891::1792286904::1::::<><><>0<>0<>0814a3313183061e423b0ba30d6dab71<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-node_2d.tscn::PackedScene::8604758410356935710::1792513078::0::1::::<><><>0<>0<><>::uid://bwjhhy76nj1rm::::res://pleyer1.gd<>uid://tr2yis3mdib::::res://sprites/Sprite folha 1.png<>uid://dumfhvpgn75t5::::res://tile map/Cave Tileset/Gray_Tile_Terrain (16 x 16).png<>uid://cvghoftl0rosi::::res://sprites/Ninja.png<>uid://njsp2dlx6pju::::res://tile map/Cave Tileset/_Complete_static_BG_(288 x 208).png
+node_2d.tscn::PackedScene::8604758410356935710::1792612303::0::1::::<><><>0<>0<><>::uid://bwjhhy76nj1rm::::res://pleyer1.gd<>uid://tr2yis3mdib::::res://sprites/Sprite folha 1.png<>uid://dumfhvpgn75t5::::res://tile map/Cave Tileset/Gray_Tile_Terrain (16 x 16).png<>uid://cvghoftl0rosi::::res://sprites/Ninja.png<>uid://bnku8xsj6dae8::::res://tile map/Cave Tileset/Scaffolding_and_BG_Parts (16 x 16).png<>uid://njsp2dlx6pju::::res://tile map/Cave Tileset/_Complete_static_BG_(288 x 208).png
 player1.gd::GDScript::2913938982718274966::1792510729::0::1::::<>CharacterBody2D<><>0<>0<><>::
 pleyer1.gd::GDScript::3949593474443450670::1792511009::0::1::::<>CharacterBody2D<><>0<>0<><>::
 pleyer.gd::GDScript::2193981992571506891::1792431643::0::1::::<>CharacterBody2D<><>0<>0<><>::
+pleyer.tscn::PackedScene::1148118043742415368::1792611727::0::1::::<><><>0<>0<><>::uid://bwjhhy76nj1rm::::res://pleyer1.gd<>uid://cvghoftl0rosi::::res://sprites/Ninja.png<>uid://tr2yis3mdib::::res://sprites/Sprite folha 1.png
 ::res://sprites/::1792358153
 baixados (1).jpg::CompressedTexture2D::7281357355578454772::1792299819::1792299819::1::::<><><>0<>0<>59b4a7dc94b09f6566bab19b5cc55556<>res://.godot/imported/baixados (1).jpg-22ae985e337618de0f7d18449dbcfe10.ctex::
 baixados.jpg::CompressedTexture2D::7313604585356147862::1792299578::1792299579::1::::<><><>0<>0<>4f031c8bc3b344d57ec3c31f2bb590ef<>res://.godot/imported/baixados.jpg-016373e425fcd2d2df425304fa08b640.ctex::
@@ -12,9 +14,12 @@ image-removebg-preview.png::CompressedTexture2D::4566636586153590699::1792299967
 Ninja.png::CompressedTexture2D::6259643662875192284::1792358153::1792358153::1::::<><><>0<>0<>1493fb9c61c530ef3a600f3605655019<>res://.godot/imported/Ninja.png-eb5a8ffcb0659bd1a35b97f175be5933.ctex::
 Sprite folha 1.png::CompressedTexture2D::40304856414167037::1792338813::1792338813::1::::<><><>0<>0<>78f9f26a90f68a23b5a7313603521acf<>res://.godot/imported/Sprite folha 1.png-547db863c2740175b03612beffa3c739.ctex::
 ::res://tile map/::1792339157
-::res://tile map/Cave Tileset/::1792339157
+::res://tile map/Cave Tileset/::1792709927
 _Complete_static_BG_(288 x 208).png::CompressedTexture2D::932155483155957386::1792339157::1792339157::1::::<><><>0<>0<>dee482a8835a3c788d778f9dc0ece535<>res://.godot/imported/_Complete_static_BG_(288 x 208).png-17f1c281f593ee5fdd4cdf99b5a91135.ctex::
 _LICENSE.txt::TextFile::-1::1792339157::0::1::::<><><>0<>0<><>::
+a_wide_horizontal_pixel_art_2d_game_background (1).png::CompressedTexture2D::1893617911634362780::1792709669::1792709669::1::::<><><>0<>0<>6a1075e0208657fad8f6bcd5097aa95d<>res://.godot/imported/a_wide_horizontal_pixel_art_2d_game_background (1).png-bc66365d45980406d1cfab92c1fc703b.ctex::
 Brown_Tile_Terrain (16 x 16).png::CompressedTexture2D::4869406209363129099::1792339157::1792339157::1::::<><><>0<>0<>cf0ae05b8dff094e0d1cb7ae710cc18d<>res://.godot/imported/Brown_Tile_Terrain (16 x 16).png-3a655299ddcfd65a57e4ff7b27970038.ctex::
+Caverna Vulcânica em Pixel Art (1).png::CompressedTexture2D::3119657578372170279::1792709927::1792709927::1::::<><><>0<>0<>0fd72f5a45d0743c646d3f90bfa442d5<>res://.godot/imported/Caverna Vulcânica em Pixel Art (1).png-6363a1586830b6106273467144bca259.ctex::
+Caverna Vulcânica em Pixel Art.png::CompressedTexture2D::3657032301493908912::1792709299::1792709300::1::::<><><>0<>0<>e70e9c598a555aafe48d52e8146a5a11<>res://.godot/imported/Caverna Vulcânica em Pixel Art.png-b559c3e93165d9bf014809d15f6611ee.ctex::
 Gray_Tile_Terrain (16 x 16).png::CompressedTexture2D::8588128668863532012::1792339157::1792339157::1::::<><><>0<>0<>5216cebb50d7d5cdce6767f401525bb5<>res://.godot/imported/Gray_Tile_Terrain (16 x 16).png-ed64f839ed5cbc525789ae4136b177b2.ctex::
 Scaffolding_and_BG_Parts (16 x 16).png::CompressedTexture2D::3320793935876306769::1792339157::1792339157::1::::<><><>0<>0<>616967195fb21166f20110d664fd7997<>res://.godot/imported/Scaffolding_and_BG_Parts (16 x 16).png-3c811d10120ebc45b6c4e2e1aa482050.ctex::
