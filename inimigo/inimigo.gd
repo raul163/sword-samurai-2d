@@ -1,0 +1,122 @@
+extends CharacterBody2D
+
+@export var velocidade: float = 120.0
+@export var vida: int = 20
+@export var dano_ataque_1: int = 15
+@export var dano_ataque_2: int = 20
+@export var intervalo_ataque: float = 1.0
+
+@onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var detection_area: Area2D = $detectionarea
+@onready var attack_area: Area2D = $attackarea
+
+var player: Node2D = null
+var esta_morto: bool = false
+var esta_atacando: bool = false
+var tempo_ataque: float = 0.0
+
+
+func _ready() -> void:
+	randomize()
+	detection_area.body_entered.connect(_on_detection_entered)
+	detection_area.body_exited.connect(_on_detection_exited)
+
+
+func _physics_process(delta: float) -> void:
+	if esta_morto:
+		return
+
+	if not is_on_floor():
+		velocity += get_gravity() * delta
+
+	tempo_ataque = maxf(tempo_ataque - delta, 0.0)
+
+	if esta_atacando:
+		velocity.x = 0.0
+	elif is_instance_valid(player):
+		var distancia_x: float = player.global_position.x - global_position.x
+		sprite.flip_h = distancia_x < 0
+
+		if attack_area.overlaps_body(player):
+			velocity.x = 0.0
+			if tempo_ataque <= 0.0:
+				executar_ataque()
+			else:
+				tocar_animacao("parado")
+		else:
+			velocity.x = sign(distancia_x) * velocidade
+			tocar_animacao("run")
+	else:
+		velocity.x = 0.0
+		tocar_animacao("parado")
+
+	move_and_slide()
+
+
+func executar_ataque() -> void:
+	esta_atacando = true
+	tempo_ataque = intervalo_ataque
+
+	var nome_ataque: String
+	var dano: int
+
+	if randi() % 2 == 0:
+		nome_ataque = "ataque 1"
+		dano = dano_ataque_1
+	else:
+		nome_ataque = "ataque 2"
+		dano = dano_ataque_2
+
+	tocar_animacao(nome_ataque)
+
+	await get_tree().create_timer(0.4).timeout
+
+	if not esta_morto and is_instance_valid(player) and attack_area.overlaps_body(player):
+		if player.has_method("receber_dano"):
+			player.receber_dano(dano)
+
+	esta_atacando = false
+
+
+func tocar_animacao(nome: String) -> void:
+	if sprite.sprite_frames != null and sprite.sprite_frames.has_animation(nome):
+		if sprite.animation != nome or not sprite.is_playing():
+			sprite.play(nome)
+
+
+func receber_dano(quantidade: int) -> void:
+	if esta_morto:
+		return
+
+	vida -= quantidade
+	print("Vida do inimigo: ", vida)
+
+	if vida <= 0:
+		morrer()
+
+
+func morrer() -> void:
+	esta_morto = true
+	velocity = Vector2.ZERO
+
+	detection_area.set_deferred("monitoring", false)
+	attack_area.set_deferred("monitoring", false)
+	$CollisionShape2D.set_deferred("disabled", true)
+
+	if sprite.sprite_frames != null and sprite.sprite_frames.has_animation("morte"):
+		sprite.play("morte")
+		await sprite.animation_finished
+
+	queue_free()
+
+
+func _on_detection_entered(body: Node2D) -> void:
+	print("Entrou na detecção: ", body.name)
+	if body.is_in_group("player"):
+		player = body
+		print("Player detectado!")
+
+
+func _on_detection_exited(body: Node2D) -> void:
+	if body == player:
+		player = null
