@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmechaooiomyb"
-path="res://.godot/imported/Cast.png-cf4181c396877a9461c11c5c09a18f4d.ctex"
+path="res://.godot/imported/Cast.png-e1331e14adf18602aeb579f441547f77.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/craftpix-net-407836-free-ninja-sprite-sheets-pixel-art/Ninja_Monk/Cast.png"
-dest_files=["res://.godot/imported/Cast.png-cf4181c396877a9461c11c5c09a18f4d.ctex"]
+source_file="res://inimigo/Cast.png"
+dest_files=["res://.godot/imported/Cast.png-e1331e14adf18602aeb579f441547f77.ctex"]
 
 [params]
 

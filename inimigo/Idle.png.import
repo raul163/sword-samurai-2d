@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dxwquftdfq3p6"
-path="res://.godot/imported/Idle.png-5ef1dd043719c0b52e5f0fd4723996ab.ctex"
+path="res://.godot/imported/Idle.png-8fed06a3a7ef3a0414085189b7897831.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/craftpix-net-407836-free-ninja-sprite-sheets-pixel-art/Ninja_Monk/Idle.png"
-dest_files=["res://.godot/imported/Idle.png-5ef1dd043719c0b52e5f0fd4723996ab.ctex"]
+source_file="res://inimigo/Idle.png"
+dest_files=["res://.godot/imported/Idle.png-8fed06a3a7ef3a0414085189b7897831.ctex"]
 
 [params]
 

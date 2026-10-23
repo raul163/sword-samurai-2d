@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfsejjm0fkj8q"
-path="res://.godot/imported/Walk.png-e014241e46fac6c7041094f6d8a166c5.ctex"
+path="res://.godot/imported/Walk.png-747a8af7a2a4ee0d7f4c33ca07e0413b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/craftpix-net-407836-free-ninja-sprite-sheets-pixel-art/Ninja_Monk/Walk.png"
-dest_files=["res://.godot/imported/Walk.png-e014241e46fac6c7041094f6d8a166c5.ctex"]
+source_file="res://inimigo/Walk.png"
+dest_files=["res://.godot/imported/Walk.png-747a8af7a2a4ee0d7f4c33ca07e0413b.ctex"]
 
 [params]
 

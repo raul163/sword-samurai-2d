@@ -1,13 +1,12 @@
 [gd_scene format=3 uid="uid://byty7fae187dv"]
 
-[ext_resource type="Script" uid="uid://c7ojhec1raxij" path="res://player.gd" id="1_5cs1f"]
-[ext_resource type="Texture2D" uid="uid://bfsejjm0fkj8q" path="res://sprites/craftpix-net-407836-free-ninja-sprite-sheets-pixel-art/Ninja_Monk/Walk.png" id="2_ekwcj"]
-[ext_resource type="Texture2D" uid="uid://c58ws4k56pd5s" path="res://sprites/craftpix-net-407836-free-ninja-sprite-sheets-pixel-art/Ninja_Monk/Attack_1.png" id="3_eewpo"]
-[ext_resource type="Texture2D" uid="uid://b63djmd2tnvdj" path="res://sprites/craftpix-net-407836-free-ninja-sprite-sheets-pixel-art/Ninja_Monk/Attack_2.png" id="4_3af6e"]
-[ext_resource type="Texture2D" uid="uid://boujm8yxrairr" path="res://sprites/craftpix-net-407836-free-ninja-sprite-sheets-pixel-art/Ninja_Monk/Dead.png" id="5_nglqo"]
-[ext_resource type="Texture2D" uid="uid://dxwquftdfq3p6" path="res://sprites/craftpix-net-407836-free-ninja-sprite-sheets-pixel-art/Ninja_Monk/Idle.png" id="6_f2mw5"]
-[ext_resource type="Texture2D" uid="uid://bh5ilpw4w4udk" path="res://sprites/craftpix-net-407836-free-ninja-sprite-sheets-pixel-art/Ninja_Monk/Jump.png" id="7_ekwcj"]
-[ext_resource type="Texture2D" uid="uid://dp7ewokiw3mlj" path="res://sprites/craftpix-net-407836-free-ninja-sprite-sheets-pixel-art/Ninja_Monk/Run.png" id="7_kus2f"]
+[ext_resource type="Texture2D" uid="uid://bfsejjm0fkj8q" path="res://inimigo/Walk.png" id="2_ekwcj"]
+[ext_resource type="Texture2D" uid="uid://c58ws4k56pd5s" path="res://inimigo/Attack_1.png" id="3_eewpo"]
+[ext_resource type="Texture2D" uid="uid://b63djmd2tnvdj" path="res://inimigo/Attack_2.png" id="4_3af6e"]
+[ext_resource type="Texture2D" uid="uid://boujm8yxrairr" path="res://inimigo/Dead.png" id="5_nglqo"]
+[ext_resource type="Texture2D" uid="uid://dxwquftdfq3p6" path="res://inimigo/Idle.png" id="6_f2mw5"]
+[ext_resource type="Texture2D" uid="uid://bh5ilpw4w4udk" path="res://inimigo/Jump.png" id="7_ekwcj"]
+[ext_resource type="Texture2D" uid="uid://dp7ewokiw3mlj" path="res://inimigo/Run.png" id="7_kus2f"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dlqmb"]
 size = Vector2(5, 26.5)
@@ -374,7 +373,6 @@ radius = 15.033297
 [node name="Node2D" type="Node2D" unique_id=1222919526]
 
 [node name="inimigo" type="CharacterBody2D" parent="." unique_id=1300424494]
-script = ExtResource("1_5cs1f")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="inimigo" unique_id=2108235124]
 position = Vector2(164.5, 93.25)

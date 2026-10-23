@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b63djmd2tnvdj"
-path="res://.godot/imported/Attack_2.png-92001ff3b1b1a435c4980866f450e128.ctex"
+path="res://.godot/imported/Attack_2.png-160be6feacd0fbbf34967c8276ae87b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/craftpix-net-407836-free-ninja-sprite-sheets-pixel-art/Ninja_Monk/Attack_2.png"
-dest_files=["res://.godot/imported/Attack_2.png-92001ff3b1b1a435c4980866f450e128.ctex"]
+source_file="res://inimigo/Attack_2.png"
+dest_files=["res://.godot/imported/Attack_2.png-160be6feacd0fbbf34967c8276ae87b0.ctex"]
 
 [params]
 

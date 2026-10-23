@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8pn8inp0a1kg"
-path="res://.godot/imported/Hurt.png-644549c63b021929fa0c5c1314442982.ctex"
+path="res://.godot/imported/Hurt.png-2c3a07822ef8988b0f59d2a8b9f2cf7b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/craftpix-net-407836-free-ninja-sprite-sheets-pixel-art/Ninja_Monk/Hurt.png"
-dest_files=["res://.godot/imported/Hurt.png-644549c63b021929fa0c5c1314442982.ctex"]
+source_file="res://inimigo/Hurt.png"
+dest_files=["res://.godot/imported/Hurt.png-2c3a07822ef8988b0f59d2a8b9f2cf7b.ctex"]
 
 [params]
 
