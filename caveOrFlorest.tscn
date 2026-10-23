@@ -2,7 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://qmflo6muplv1" path="res://pleyer.tscn" id="1_8727h"]
 [ext_resource type="Texture2D" uid="uid://cbm1n5vambln4" path="res://tile map/Cave Tileset/Brown_Tile_Terrain (16 x 16).png" id="2_m0tdd"]
-[ext_resource type="Texture2D" uid="uid://18ju0s7djtvo" path="res://tile map/Cave Tileset/a_wide_horizontal_pixel_art_2d_game_background (1).png" id="4_nqngp"]
+[ext_resource type="Texture2D" uid="uid://b7r8f2peuiawd" path="res://tile map/Cave Tileset/Caverna Vulcânica em Pixel Art (2).png" id="3_7nqa2"]
+[ext_resource type="Texture2D" uid="uid://qgi7886gk4rl" path="res://tile map/Cave Tileset/a_wide_horizontal_pixel_art_2d_game_background (1) (1).png" id="4_nqngp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7nqa2"]
 texture = ExtResource("2_m0tdd")
@@ -175,38 +176,40 @@ texture = ExtResource("2_m0tdd")
 23:20/0 = 0
 29:20/0 = 0
 31:20/0 = 0
+8:9/0 = 0
+8:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, 0.5395756, 8, -8, 8)
 
 [sub_resource type="TileSet" id="TileSet_c51x0"]
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_7nqa2")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8727h"]
-load_path = "res://.godot/imported/Caverna Vulcânica em Pixel Art (1).png-6363a1586830b6106273467144bca259.ctex"
-
 [node name="Node2D" type="Node2D" unique_id=639088591]
 position = Vector2(0, 1)
 
 [node name="pleyer" parent="." unique_id=1020297030 instance=ExtResource("1_8727h")]
-position = Vector2(116, -144)
+position = Vector2(-7, -159)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=944707296]
-tile_map_data = PackedByteArray("AAADAAYAAQAFAAQAAAAEAAYAAQAFAAQAAAAFAAYAAQAFAAQAAAAGAAYAAQAFAAQAAAAHAAYAAQAFAAQAAAAIAAYAAQAFAAQAAAAJAAYAAQAFAAQAAAAKAAYAAQAFAAQAAAALAAYAAQAFAAQAAAAMAAYAAQAFAAQAAAANAAYAAQAFAAQAAAAOAAYAAQAFAAQAAAAPAAYAAQAFAAQAAAAQAAYAAQAFAAQAAAARAAYAAQAFAAQAAAASAAYAAQAFAAQAAAATAAYAAQAFAAQAAAAUAAYAAQAFAAQAAAAVAAYAAQAFAAQAAAAWAAYAAQAFAAQAAAAXAAYAAQAFAAQAAAAYAAYAAQAFAAQAAAAZAAYAAQAFAAQAAAAaAAYAAQAFAAQAAAAbAAYAAQAFAAQAAAAcAAYAAQAFAAQAAAAdAAYAAQAFAAQAAAAeAAYAAQAFAAQAAAAfAAYAAQAFAAQAAAAgAAYAAQAFAAQAAAAhAAYAAQAFAAQAAAAiAAYAAQAFAAQAAAAjAAYAAQAFAAQAAAAkAAYAAQAFAAQAAAAlAAYAAQAFAAQAAAAmAAYAAQAFAAQAAAAnAAYAAQAFAAQAAAAoAAYAAQAFAAQAAAApAAYAAQAFAAQAAAAqAAYAAQAFAAQAAAArAAYAAQAFAAQAAAAsAAYAAQAFAAQAAAAtAAYAAQAFAAQAAAA=")
+position = Vector2(-1, 1)
+tile_map_data = PackedByteArray("AAAFAAUAAQAIAAkAAAAGAAUAAQAIAAkAAAAHAAUAAQAIAAkAAAAIAAUAAQAIAAkAAAAJAAUAAQAIAAkAAAAKAAUAAQAIAAkAAAALAAUAAQAIAAkAAAAMAAUAAQAIAAkAAAANAAUAAQAIAAkAAAAOAAUAAQAIAAkAAAAPAAUAAQAIAAkAAAAQAAUAAQAIAAkAAAARAAUAAQAIAAkAAAASAAUAAQAIAAkAAAATAAUAAQAIAAkAAAAUAAUAAQAIAAkAAAAVAAUAAQAIAAkAAAAWAAUAAQAIAAkAAAAXAAUAAQAIAAkAAAAYAAUAAQAIAAkAAAAZAAUAAQAIAAkAAAAaAAUAAQAIAAkAAAAbAAUAAQAIAAkAAAAcAAUAAQAIAAkAAAAdAAUAAQAIAAkAAAAqAAUAAQAIAAkAAAApAAUAAQAIAAkAAAAoAAUAAQAIAAkAAAAnAAUAAQAIAAkAAAAmAAUAAQAIAAkAAAAlAAUAAQAIAAkAAAAkAAUAAQAIAAkAAAAjAAUAAQAIAAkAAAAiAAUAAQAIAAkAAAAhAAUAAQAIAAkAAAAgAAUAAQAIAAkAAAAfAAUAAQAIAAkAAAAeAAUAAQAIAAkAAAA=")
 tile_set = SubResource("TileSet_c51x0")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1324390488]
 
 [node name="1" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1100355298]
+position = Vector2(-155, -5)
 motion_scale = Vector2(0.26, 0.26)
-motion_mirroring = Vector2(530, 0)
+motion_mirroring = Vector2(204, 0)
 
 [node name="CavernaVulcânicaEmPixelArt(1)" type="Sprite2D" parent="ParallaxBackground/1" unique_id=1537490764]
-position = Vector2(265, -15)
-scale = Vector2(1.061245, 0.9107143)
-texture = SubResource("CompressedTexture2D_8727h")
+position = Vector2(454, 50)
+scale = Vector2(0.7653113, 0.74883926)
+texture = ExtResource("3_7nqa2")
 
 [node name="2" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1287800803]
+position = Vector2(249, 36)
 motion_scale = Vector2(0.26, 0.26)
-motion_mirroring = Vector2(530, 0)
+motion_mirroring = Vector2(318, 0)
 
 [node name="CavernaVulcânicaEmPixelArt(1)" type="Sprite2D" parent="ParallaxBackground/2" unique_id=625188521]
 position = Vector2(0, 1)

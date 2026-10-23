@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://18ju0s7djtvo"
-path="res://.godot/imported/a_wide_horizontal_pixel_art_2d_game_background (1).png-bc66365d45980406d1cfab92c1fc703b.ctex"
+uid="uid://b7r8f2peuiawd"
+path="res://.godot/imported/Caverna Vulcânica em Pixel Art (2).png-28b8db572950bf71ee9cb2a3ecf3a899.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tile map/Cave Tileset/a_wide_horizontal_pixel_art_2d_game_background (1).png"
-dest_files=["res://.godot/imported/a_wide_horizontal_pixel_art_2d_game_background (1).png-bc66365d45980406d1cfab92c1fc703b.ctex"]
+source_file="res://tile map/Cave Tileset/Caverna Vulcânica em Pixel Art (2).png"
+dest_files=["res://.godot/imported/Caverna Vulcânica em Pixel Art (2).png-28b8db572950bf71ee9cb2a3ecf3a899.ctex"]
 
 [params]
 
