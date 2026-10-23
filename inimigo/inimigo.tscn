@@ -373,6 +373,7 @@ radius = 15.033297
 [node name="Node2D" type="Node2D" unique_id=1222919526]
 
 [node name="inimigo" type="CharacterBody2D" parent="." unique_id=1300424494]
+position = Vector2(-45, -17)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="inimigo" unique_id=2108235124]
 position = Vector2(164.5, 93.25)
@@ -399,6 +400,6 @@ debug_color = Color(0.84431, 0.0010430897, 0.91462916, 0.41960785)
 position = Vector2(137, 68)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="inimigo/attackarea" unique_id=1382259159]
-position = Vector2(30, 26)
+position = Vector2(31, 23)
 shape = SubResource("CircleShape2D_vjghq")
 debug_color = Color(0.6977385, 0.49399424, 0, 0.41960785)
