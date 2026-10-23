@@ -399,6 +399,6 @@ debug_color = Color(0.84431, 0.0010430897, 0.91462916, 0.41960785)
 position = Vector2(137, 68)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="inimigo/attackarea" unique_id=1382259159]
-position = Vector2(29, 25)
+position = Vector2(30, 26)
 shape = SubResource("CircleShape2D_vjghq")
 debug_color = Color(0.6977385, 0.49399424, 0, 0.41960785)

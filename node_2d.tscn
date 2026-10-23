@@ -699,6 +699,10 @@ region = Rect2(576, 0, 96, 96)
 atlas = ExtResource("7_ir8iy")
 region = Rect2(672, 0, 96, 96)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_ornx7"]
+atlas = ExtResource("8_hqns4")
+region = Rect2(384, 0, 96, 96)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_2u7jv"]
 atlas = ExtResource("8_hqns4")
 region = Rect2(0, 0, 96, 96)
@@ -714,10 +718,6 @@ region = Rect2(192, 0, 96, 96)
 [sub_resource type="AtlasTexture" id="AtlasTexture_kq1c5"]
 atlas = ExtResource("8_hqns4")
 region = Rect2(288, 0, 96, 96)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ornx7"]
-atlas = ExtResource("8_hqns4")
-region = Rect2(384, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cnnru"]
 atlas = ExtResource("8_hqns4")
@@ -819,6 +819,9 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_ornx7")
+}, {
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_2u7jv")
 }, {
 "duration": 1.0,
@@ -831,14 +834,11 @@ animations = [{
 "texture": SubResource("AtlasTexture_kq1c5")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ornx7")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_cnnru")
 }],
 "loop": 1,
 "name": &"run",
-"speed": 5.0
+"speed": 15.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vjghq"]
@@ -860,32 +860,30 @@ tile_set = SubResource("TileSet_c51x0")
 script = ExtResource("4_4d7sh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=2026417415]
-position = Vector2(323.5, 226.5)
+position = Vector2(37.5, 31.5)
 shape = SubResource("RectangleShape2D_c51x0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=749513724]
 texture_filter = 1
-position = Vector2(324.75, 223.74998)
+position = Vector2(38.75, 28.749985)
 scale = Vector2(0.203125, 0.2239581)
 sprite_frames = SubResource("SpriteFrames_c51x0")
-animation = &"attack"
-frame = 5
-frame_progress = 1.0
+animation = &"run"
 
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=1588040267]
-position = Vector2(323.75, 223)
+position = Vector2(37.75, 28)
 limit_bottom = 1000000
 position_smoothing_enabled = true
 
 [node name="PickupArea" type="Area2D" parent="player" unique_id=1679253912]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player/PickupArea" unique_id=23279451]
-position = Vector2(324, 224)
+position = Vector2(38, 29)
 shape = SubResource("CircleShape2D_vjghq")
 debug_color = Color(0.7784629, 0.15922388, 0.9834296, 0.41960785)
 
 [node name="AttackArea" type="Area2D" parent="player" unique_id=2033776780]
-position = Vector2(322, 240)
+position = Vector2(36, 45)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player/AttackArea" unique_id=1938667972]
 position = Vector2(3, -16)
