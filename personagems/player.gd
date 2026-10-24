@@ -2,7 +2,10 @@ extends CharacterBody2D
 
 @export var speed := 150.0
 @export var jump_velocity := -200.0
-@export var health := 3
+signal health_changed(current: int, maximum: int)
+
+@export var max_health := 100
+@export var health := 100
 
 @export var default_attack := {"name": "Soco", "damage": 1, "cooldown": 0.4}
 @export var sword_attack := {"name": "Espada", "damage": 3, "cooldown": 0.3}
@@ -21,6 +24,7 @@ var gravity: float = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 
 func _ready() -> void:
+	add_to_group("player")
 	current_attack = default_attack
 	pickup_area.area_entered.connect(_on_pickup_area_entered)
 
@@ -80,7 +84,8 @@ func attack() -> void:
 func take_damage(amount: int) -> void:
 	if is_dead:
 		return
-	health -= amount
+	health = clampi(health - amount, 0, max_health)
+	health_changed.emit(health, max_health)
 	if health <= 0:
 		die()
 
@@ -95,3 +100,7 @@ func _on_pickup_area_entered(area: Area2D) -> void:
 	if area.is_in_group("sword"):
 		current_attack = sword_attack
 		area.queue_free()
+		
+func _unhandled_input(event: InputEvent) -> void:
+	if event is InputEventKey and event.pressed and event.keycode == KEY_T:
+		take_damage(1)
