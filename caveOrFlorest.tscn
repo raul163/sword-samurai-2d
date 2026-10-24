@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cbm1n5vambln4" path="res://tile map/Cave Tileset/Brown_Tile_Terrain (16 x 16).png" id="2_m0tdd"]
 [ext_resource type="Texture2D" uid="uid://b7r8f2peuiawd" path="res://tile map/Cave Tileset/Caverna Vulcânica em Pixel Art (2).png" id="3_7nqa2"]
 [ext_resource type="Texture2D" uid="uid://qgi7886gk4rl" path="res://tile map/Cave Tileset/a_wide_horizontal_pixel_art_2d_game_background (1) (1).png" id="4_nqngp"]
+[ext_resource type="PackedScene" uid="uid://ddpgsux0wbm5f" path="res://inimigo/inimigo1.tscn" id="5_nqngp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7nqa2"]
 texture = ExtResource("2_m0tdd")
@@ -215,6 +216,9 @@ motion_scale = Vector2(0.6, 0.6)
 motion_mirroring = Vector2(318, 0)
 
 [node name="CavernaVulcânicaEmPixelArt(1)" type="Sprite2D" parent="ParallaxBackground/2" unique_id=625188521]
-position = Vector2(50.661865, 41.83706)
+position = Vector2(43.661865, 52.83706)
 scale = Vector2(1.061245, 0.9107143)
 texture = ExtResource("4_nqngp")
+
+[node name="inimigo" parent="." unique_id=1876103865 instance=ExtResource("5_nqngp")]
+position = Vector2(201.83093, 49)
